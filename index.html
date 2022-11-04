@@ -6,27 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    
-    <h3>Contact Us</h3>
+</head>
+<body>
+    <main>
+        <h3>Contact Us</h3>
          <p>Got a question? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p> 
-    
-        <form action="contact">
+            
+              <form action='https://getform.io/f/e89c96a8-8d89-4f5e-956d-aeaddfc3b591' method='POST'>
+                
+               <label class="help" for=''>What can we help you with?</label>
+                <select name="help" required>
+                  
+                  <option name='selection' value="" disabled selected hidden> Select what we can help with</option>
+                  <option name='customer' value="">Customer Support</option>
+                  <option name='customer' value="">Feedback</option>
+                  <option name='customer' value="">FAQ</option>
+                </select>
+               
         
-        <fieldset>
-         <label for="select">What can we help you with?</label>
-        <select class="select" type="select" name="select" >
-            <option value="">Select what we can help you with...</option>
-        </select>
-<br>
-        <label for="typebox1">Name</label>
-        <input class="typebox1" type="text" name="name"></input>
-<br>
-        <label for="thypebox2">Email</label>
-        <input class="typebox2" type="email" name="email"></input>
-<br>
-        <label for="typebox3">Message</label>
-        <textarea class="typebox3" type="text" name="message"></textarea>
-<br>
-        <input class="send" type="submit" value="Send"></input>
-    </fieldset>
-    </form
+                  
+                <label for="name" maxlength='4'>Name</label>
+                <input id="fname" type="text" name="name" required>
+        
+                <label for="mail">Email</label>
+                <input id="email-addy" type="email" name="email" minlength='20' maxlength='35' required>
+        
+                <label for="Message">Message</label>
+          <textarea id="img" cols='30' rows='10' type="text" name="message" required> </textarea>
+        
+                <button type="submit" value="Send">Send</button>
+          </form>
+                
+                </main>
+</body>
+</html>
